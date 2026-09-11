@@ -1,0 +1,16 @@
+CASOS DE TESTE - SISTEMA PSE
+
+Este arquivo contém os casos utilizados para verificar o funcionamento
+das funcionalidades do sistema.
+
+CASO 01 - Menu principal
+Entrada: opção válida do menu.
+Resultado esperado: o sistema deve acessar a funcionalidade escolhida.
+
+CASO 02 - Opção inválida
+Entrada: opção inexistente no menu.
+Resultado esperado: o sistema deve informar que a opção é inválida.
+
+CASO 03 - Encerramento
+Entrada: opção de saída.
+Resultado esperado: o sistema deve encerrar o programa corretamente.
