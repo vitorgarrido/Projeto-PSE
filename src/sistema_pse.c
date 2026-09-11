@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 
 #define MAX_ACOES 100
 #define TAM_TEXTO 100
