@@ -1,16 +1,54 @@
 CASOS DE TESTE - SISTEMA PSE
 
-Este arquivo contém os casos utilizados para verificar o funcionamento
-das funcionalidades do sistema.
+CT01 - Cadastrar ação válida
+Entrada: código 001 e dados válidos.
+Resultado esperado: "Ação cadastrada com sucesso".
 
-CASO 01 - Menu principal
-Entrada: opção válida do menu.
-Resultado esperado: o sistema deve acessar a funcionalidade escolhida.
+CT02 - Cadastrar código repetido
+Entrada: utilizar novamente o código 001.
+Resultado esperado: "Código já cadastrado".
 
-CASO 02 - Opção inválida
-Entrada: opção inexistente no menu.
-Resultado esperado: o sistema deve informar que a opção é inválida.
+CT03 - Cadastrar quantidade negativa
+Entrada: quantidade prevista menor que zero.
+Resultado esperado: sistema rejeita o cadastro.
 
-CASO 03 - Encerramento
-Entrada: opção de saída.
-Resultado esperado: o sistema deve encerrar o programa corretamente.
+CT04 - Listar ações
+Pré-condição: existir pelo menos uma ação cadastrada.
+Resultado esperado: sistema apresenta as ações cadastradas.
+
+CT05 - Consultar ação existente
+Entrada: código de uma ação cadastrada.
+Resultado esperado: sistema apresenta os dados da ação.
+
+CT06 - Consultar ação inexistente
+Entrada: código não cadastrado.
+Resultado esperado: "Ação não encontrada".
+
+CT07 - Atualizar situação
+Entrada: código existente e opção 2 (Realizada).
+Resultado esperado: situação alterada para "Realizada".
+
+CT08 - Registrar participação
+Pré-condição: ação com situação "Realizada".
+Entrada: quantidade efetiva igual ou maior que zero.
+Resultado esperado: participação registrada.
+
+CT09 - Registrar participação em ação não realizada
+Pré-condição: ação planejada ou cancelada.
+Resultado esperado: sistema informa que a participação somente pode ser registrada para ação realizada.
+
+CT10 - Registrar participação negativa
+Entrada: quantidade efetiva menor que zero.
+Resultado esperado: sistema rejeita o valor.
+
+CT11 - Gerar resumo
+Pré-condição: possuir ações cadastradas.
+Resultado esperado: sistema apresenta quantidades por situação, totais previstos e efetivos e percentual de participação.
+
+CT12 - Opção inválida
+Entrada: número que não pertence ao menu.
+Resultado esperado: "Opção inválida".
+
+CT13 - Encerramento
+Entrada: opção 0.
+Resultado esperado: programa encerra corretamente.
