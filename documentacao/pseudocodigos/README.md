@@ -1,3 +1,5 @@
-# Pseudocódigos
-
-Esta pasta contém os pseudocódigos utilizados para representar a lógica das funcionalidades do sistema PSE.
+Pseudocódigos
+Colocar nesta pasta os pseudocódigos das principais funcionalidades do sistema.
+Sugestão:
+pseudocodigo-menu.txt
+pseudocodigo-cadastro.txt
