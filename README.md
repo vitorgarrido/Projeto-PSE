@@ -113,7 +113,7 @@ A aplicação possui finalidade acadêmica e organizacional, não substituindo o
 
 ### Vídeo de apresentação
 
-[Assista ao vídeo de apresentação do projeto](COLE_AQUI_O_LINK_DO_YOUTUBE)
+[Assista ao vídeo de apresentação do projeto](https://youtu.be/NokumxrBrP8?feature=shared)
 
 ### Instituição
 
