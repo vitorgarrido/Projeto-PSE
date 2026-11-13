@@ -1,1 +1,64 @@
 
+SISTEMA PSE EM AÇÃO
+PLANO DE TESTES
+
+Objetivo:
+Verificar o funcionamento das principais funcionalidades
+do sistema de planejamento e acompanhamento de ações do PSE.
+
+CT01 - Cadastro de ação válida
+Procedimento: Cadastrar uma ação preenchendo todos os campos corretamente.
+Resultado esperado: Ação cadastrada com sucesso.
+
+CT02 - Código duplicado
+Procedimento: Tentar cadastrar uma ação utilizando um código já existente.
+Resultado esperado: Sistema informa que o código já está cadastrado.
+
+CT03 - Listar ações
+Procedimento: Selecionar a opção 2.
+Resultado esperado: Exibir todas as ações cadastradas.
+
+CT04 - Consultar código existente
+Procedimento: Consultar uma ação utilizando um código válido.
+Resultado esperado: Exibir os dados da ação.
+
+CT05 - Consultar código inexistente
+Procedimento: Consultar uma ação utilizando um código não cadastrado.
+Resultado esperado: Informar que a ação não foi encontrada.
+
+CT06 - Atualizar situação
+Procedimento: Alterar a situação de uma ação cadastrada.
+Resultado esperado: Situação atualizada corretamente.
+
+CT07 - Registrar participação em ação realizada
+Procedimento: Informar a quantidade efetiva de participantes de uma ação realizada.
+Resultado esperado: Participação registrada com sucesso.
+
+CT08 - Registrar participação em ação planejada
+Procedimento: Tentar registrar participação em uma ação ainda planejada.
+Resultado esperado: Operação rejeitada pelo sistema.
+
+CT09 - Quantidade negativa
+Procedimento: Informar uma quantidade negativa de participantes.
+Resultado esperado: Sistema rejeita o valor.
+
+CT10 - Limite de cadastros
+Procedimento: Tentar cadastrar mais de 100 ações.
+Resultado esperado: Sistema impede novos cadastros após atingir o limite.
+
+CT11 - Gerar resumo
+Procedimento: Selecionar a opção 8.
+Resultado esperado: Apresentar totais de ações e informações de participação.
+
+CT12 - Opção inválida
+Procedimento: Informar uma opção fora do intervalo permitido.
+Resultado esperado: Sistema solicita uma opção válida.
+
+CT13 - Encerramento
+Procedimento: Selecionar a opção 0.
+Resultado esperado: Programa encerrado corretamente.
+
+OBSERVAÇÃO:
+Os resultados efetivamente obtidos devem ser preenchidos
+após a execução de cada teste.
+
