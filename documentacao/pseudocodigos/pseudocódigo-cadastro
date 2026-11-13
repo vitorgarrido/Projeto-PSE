@@ -1,1 +1,40 @@
 
+PSEUDOCÓDIGO - CADASTRO DE AÇÃO
+
+Algoritmo CadastrarAcao
+
+Início
+
+    Se totalAcoes >= 100 então
+        Exibir "Limite de ações atingido"
+        Retornar
+    FimSe
+
+    Solicitar código da ação
+
+    Se código já estiver cadastrado então
+        Exibir "Código já cadastrado"
+        Retornar
+    FimSe
+
+    Solicitar nome da ação
+    Solicitar escola
+    Solicitar tema
+    Solicitar data prevista
+    Solicitar público-alvo
+    Solicitar responsável
+
+    Solicitar quantidade de participantes previstos
+
+    Definir participantes efetivos = 0
+    Definir situação = "Planejada"
+
+    Armazenar os dados da ação no vetor
+
+    Salvar os dados no arquivo
+
+    Exibir "Ação cadastrada com sucesso!"
+
+Fim
+
+
