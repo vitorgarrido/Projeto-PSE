@@ -1,82 +1,126 @@
-# Projeto PSE
-
+# PSE em Ação
 ## Sistema de Planejamento e Acompanhamento de Ações do Programa Saúde na Escola
 
-Projeto desenvolvido como parte da Atividade de Estudo Programado (AEP) do curso de Engenharia de Software da Unicesumar.
+### Sobre o projeto
 
-## Sobre o projeto
+O PSE em Ação é um sistema desenvolvido como projeto acadêmico do curso de Engenharia de Software da UNICESUMAR. Seu objetivo é auxiliar no planejamento, cadastro e acompanhamento de ações coletivas relacionadas ao Programa Saúde na Escola (PSE).
 
-O projeto consiste no desenvolvimento de um sistema computacional introdutório em linguagem C para auxiliar no planejamento, registro e acompanhamento de ações coletivas do Programa Saúde na Escola (PSE).
+A aplicação permite organizar informações sobre atividades planejadas, realizadas e canceladas, facilitando o acompanhamento das ações e de seus resultados.
 
-O sistema utiliza somente dados fictícios e coletivos. Não armazena informações individuais ou sensíveis de estudantes e não realiza diagnóstico, triagem médica, prescrição ou recomendação de tratamento.
+### Objetivo
 
-## Objetivo
+Desenvolver um sistema em linguagem C que permita registrar e acompanhar ações do Programa Saúde na Escola, aplicando conceitos fundamentais de programação, como estruturas condicionais, estruturas de repetição, vetores, funções e manipulação de arquivos.
 
-Auxiliar na organização das ações do PSE por meio do cadastro, listagem, consulta e atualização de ações, registro da participação e geração de um resumo geral.
-
-## Integrantes
+### Integrantes
 
 - Juan Guimarães Mendonça
 - Murilo Constancio Amadeu
 - Vitor Garrido da Silva
 
-## Tecnologias utilizadas
+### Tecnologias utilizadas
 
 - Linguagem C
-- GitHub
+- Compilador GCC
 - Git
-- Fluxogramas
-- Pseudocódigo
+- GitHub
 
-## Funcionalidades
+### Funcionalidades
 
-1. Cadastrar ação
-2. Listar ações
-3. Consultar ação pelo código
-4. Atualizar situação
-5. Registrar participação
-6. Gerar resumo
-0. Sair
+O sistema possui as seguintes funcionalidades:
 
-## Como executar
+1. Cadastrar ações.
+2. Listar todas as ações.
+3. Listar ações por situação.
+4. Consultar ação pelo código.
+5. Atualizar situação da ação.
+6. Registrar participação.
+7. Remover ação.
+8. Gerar resumo geral.
+9. Encerrar o programa.
 
-O arquivo principal está em `src/sistema_pse.c`.
+### Informações cadastradas
 
-Com um compilador C instalado, por exemplo GCC:
+Cada ação pode conter:
+
+- Código identificador.
+- Nome da ação.
+- Escola.
+- Tema.
+- Data prevista.
+- Público-alvo.
+- Responsável.
+- Quantidade de participantes previstos.
+- Quantidade de participantes efetivos.
+- Situação da ação.
+
+### Situações disponíveis
+
+- Planejada.
+- Realizada.
+- Cancelada.
+
+### Como executar o projeto
+
+É necessário possuir um compilador da linguagem C, como o GCC.
+
+**1. Clone o repositório:**
+
+```bash
+git clone COLE_AQUI_O_LINK_DO_REPOSITORIO
+```
+
+**2. Entre na pasta do projeto:**
+
+```bash
+cd Projeto-PSE
+```
+
+**3. Compile o programa:**
 
 ```bash
 gcc src/sistema_pse.c -o sistema_pse
+```
+
+**4. Execute no Windows:**
+
+```bash
+.\sistema_pse.exe
+```
+
+**5. Execute no Linux:**
+
+```bash
 ./sistema_pse
 ```
 
-No Windows, após compilar:
+### Organização do repositório
 
-```text
-sistema_pse.exe
-```
+- `documentacao/`: documentos e materiais do projeto.
+- `documentacao/fluxogramas/`: representações visuais dos processos.
+- `documentacao/pseudocodigos/`: algoritmos em pseudocódigo.
+- `src/`: código-fonte do sistema.
+- `testes/`: documentação dos casos de teste.
 
-## Estrutura do projeto
+### Armazenamento de dados
 
-```text
-Projeto-PSE/
-├── README.md
-├── documentacao/
-│   ├── fluxogramas/
-│   └── pseudocodigos/
-├── src/
-│   └── sistema_pse.c
-└── testes/
-    └── casos_de_teste.txt
-```
+O sistema utiliza estruturas de dados em memória durante a execução e também realiza a gravação dos registros em um arquivo local chamado `acoes.dat`, permitindo recuperar os dados em execuções posteriores.
 
-## Documentação
+### Privacidade e limitações
 
-A pasta `documentacao/` contém os materiais produzidos durante o desenvolvimento, incluindo fluxogramas e pseudocódigos.
+O projeto utiliza dados fictícios e coletivos. Não devem ser inseridos nomes de estudantes, documentos pessoais, diagnósticos ou informações clínicas.
 
-## Testes
+A aplicação possui finalidade acadêmica e organizacional, não substituindo os profissionais envolvidos no Programa Saúde na Escola.
 
-Os casos de teste estão em `testes/casos_de_teste.txt`.
+### Vídeo de apresentação
 
-## Projeto acadêmico
+[Assista ao vídeo de apresentação do projeto](COLE_AQUI_O_LINK_DO_YOUTUBE)
 
-Este repositório foi desenvolvido para fins acadêmicos como parte das atividades do curso de Engenharia de Software da Unicesumar.
+### Instituição
+
+UNICESUMAR — Centro Universitário de Maringá
+
+Curso de Engenharia de Software
+
+Maringá — Paraná
+
+2026
