@@ -1,1 +1,30 @@
 
+# Fluxograma de Cadastro de Ação
+
+Este fluxograma representa detalhadamente o processo de cadastro de uma nova ação no sistema PSE.
+
+```mermaid
+flowchart TD
+    A([Início do cadastro]) --> B{Limite de 100 ações atingido?}
+    B -->|Sim| C[Informar limite atingido]
+    C --> Z([Fim])
+
+    B -->|Não| D[/Informar código da ação/]
+    D --> E{Código já cadastrado?}
+
+    E -->|Sim| F[Informar código duplicado]
+    F --> Z
+
+    E -->|Não| G[/Informar nome da ação/]
+    G --> H[/Informar escola e tema/]
+    H --> I[/Informar data prevista/]
+    I --> J[/Informar público-alvo e responsável/]
+    J --> K[/Informar participantes previstos/]
+    K --> L[Definir participantes efetivos como zero]
+    L --> M[Definir situação como Planejada]
+    M --> N[Armazenar ação no vetor]
+    N --> O[Salvar dados em arquivo]
+    O --> P[Exibir confirmação de cadastro]
+    P --> Z
+```
+
