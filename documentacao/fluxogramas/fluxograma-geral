@@ -1,1 +1,33 @@
 
+# Fluxograma Geral do Sistema PSE
+
+Este fluxograma representa o funcionamento do menu principal do sistema, apresentando as opções disponíveis ao usuário.
+
+```mermaid
+flowchart TD
+    A([Início]) --> B[Carregar dados salvos]
+    B --> C[Exibir menu principal]
+    C --> D[/Informar opção desejada/]
+    D --> E{Qual opção?}
+
+    E -->|1| F[Cadastrar ação]
+    E -->|2| G[Listar ações]
+    E -->|3| H[Listar por situação]
+    E -->|4| I[Consultar ação]
+    E -->|5| J[Atualizar situação]
+    E -->|6| K[Registrar participação]
+    E -->|7| L[Remover ação]
+    E -->|8| M[Gerar resumo]
+    E -->|0| N([Encerrar programa])
+
+    F --> O[Salvar dados]
+    G --> C
+    H --> C
+    I --> C
+    J --> O
+    K --> O
+    L --> O
+    M --> C
+    O --> C
+```
+
