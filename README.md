@@ -66,7 +66,7 @@ Cada ação pode conter:
 **1. Clone o repositório:**
 
 ```bash
-git clone COLE_AQUI_O_LINK_DO_REPOSITORIO
+git clone (https://github.com/vitorgarrido/Projeto-PSE/blob/main/README.md)
 ```
 
 **2. Entre na pasta do projeto:**
