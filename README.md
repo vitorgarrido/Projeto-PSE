@@ -36,7 +36,7 @@ O sistema possui as seguintes funcionalidades:
 6. Registrar participação.
 7. Remover ação.
 8. Gerar resumo geral.
-9. Encerrar o programa.
+0. Encerrar o programa.
 
 ### Informações cadastradas
 
